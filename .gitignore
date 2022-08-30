@@ -1,0 +1,14 @@
+.vscode
+
+### react ###
+.DS_*
+**/*.backup.*
+**/*.back.*
+.cache
+node_modules/
+
+##Production
+build
+
+##Testing
+/coverage
