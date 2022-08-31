@@ -3,8 +3,6 @@ const app = express()
 const seed = require('./seedData/seed')
 const {itemRoutes, saucesRoutes} = require('./routes');
 
-
-
 const serve = async (port) => {
     await seed() 
     app.listen(port, () => {
@@ -12,4 +10,4 @@ const serve = async (port) => {
     });
 };
 
-serve();
+serve(5000);
