@@ -9,7 +9,7 @@ itemsRouter.get('/', async (req, res) => {
 })
 
 itemsRouter.get('/:id', async (req, res) => {
-    const items = await Item.findByPk(req.params.itemId);
+    const items = await Item.findByPk(req.params.items);
     if(!items) {
         res.status(404);
         next();
@@ -18,4 +18,4 @@ itemsRouter.get('/:id', async (req, res) => {
       }
 })
 
-module.exports = itemsRouter
+module.exports = itemsRouter 

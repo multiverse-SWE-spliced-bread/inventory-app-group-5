@@ -1,2 +1,4 @@
+GET http://localhost:5000/
+
 ###
-GET http://localhost:5000/items
+GET http://localhost:5000/5
