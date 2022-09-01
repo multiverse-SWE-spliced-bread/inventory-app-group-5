@@ -1,0 +1,38 @@
+#btnSection {
+  border:1px solid black;
+  padding:.3em;
+  
+  button{
+    &:hover{
+        background:white;
+        border-color:blue;
+        font:{
+           size:12px;
+           style:normal;
+        } 
+    }
+    
+    border:{
+      color: black;
+      top-style:dotted;
+      bottom-style:dashed;
+    }
+    font:{
+       size:14px;
+       style:italic;
+    }    
+  }  
+}
+
+#main {
+  margin: 10px;
+}
+
+th{
+  padding: 30px;
+  
+}
+
+h1{
+  margin-left: 41%;
+}

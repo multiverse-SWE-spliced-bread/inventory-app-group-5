@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  
+
+  <div class="logo" style="border: 1px solid black; width: 98.7%; height: 80px;">LOGO
+    <h1>Inventory App</h1>
+  </div>
+    <div style="border: 1px solid black; width: 20%; height: 500px; float: left;"><section id="main">
+  
+      <section id="main">
+        <section id='btnSection'>
+        <button id='add'>Add</button>
+        <button id='remBtn'>Remove</button>
+        </section>
+        
+        <section id='capturer' class='modal'>
+          <p>
+            Add new item:
+          </p>
+          <label for='itDescription'>Description:</label><br>
+          <input type='text' id='itDescription'></input><br>
+          <label for='qty'>Quantity:  </label><br>
+          <input type='text' id='qty'></input><br>
+          <button id='btnOK'>OK</button>
+          <button class='btnBack'>&#8630;</button>
+          
+        </section>
+        
+        <section id='remover' class='modal'>
+          <p>
+            Enter id and remove item:
+          </p>
+          <label for='id'>Id:</label>
+          <input type='text' id='id'></input>
+          <button id='btnRemOK'>OK</button>   
+        </section>
+    
+        <table class='invTbl'>
+          <thead>
+            <th>Id</th>
+            <th>Item</th>
+            <th>Qty</th>
+          </thead>
+          <tbody>
+            <tr style="display:none"><tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+     
+      
+    <div style="border: 1px solid black; width: 78.5%; height: 500px; float: left;">
+    <div style="border: 1px solid black; width: 90%; height: 80px; margin-top: 20px; margin-left: 5%;"></div>
+    <div style="border: 1px solid red; width: 40%; height: 350px; margin-top: 10px; margin-left: 5%; float: left;"></div>
+    <div style="border: 1px solid red; width: 40%; height: 350px; margin-top: 10px; margin-left: 55%;"></div>
+    
+    </div>
+    <div style="border: 1px solid black; width: 98.7%; height: 80px; margin-top: 500px;"></div>
+ 
+
+
+  <script src="/FRONTEND/app.js"></script>
+</body>
+</html>
