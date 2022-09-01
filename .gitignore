@@ -12,3 +12,6 @@ build
 
 ##Testing
 /coverage
+
+BACKEND/node_modules
+FRONTEND/node_modules
