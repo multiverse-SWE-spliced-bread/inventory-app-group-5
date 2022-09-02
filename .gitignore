@@ -14,4 +14,5 @@ build
 /coverage
 
 BACKEND/node_modules
+BACKEND/db/db.sqlite
 FRONTEND/node_modules
