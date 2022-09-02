@@ -33,5 +33,4 @@ const Sauces = db.define("sauces", {
 module.exports = {
   Item,
   Sauces,
-
 };

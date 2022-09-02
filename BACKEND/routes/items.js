@@ -1,7 +1,7 @@
 const express = require("express");
 const itemsRouter = express.Router();
 const { Item, Sauces } = require("../models/index");
-const { data } = require('../seedData/seedData')
+const { items } = require('../seedData/seedData')
 
 itemsRouter.get('/', async (req, res) => {
     const items = await Item.findAll();
@@ -9,7 +9,7 @@ itemsRouter.get('/', async (req, res) => {
 })
 
 itemsRouter.get('/:id', async (req, res) => {
-    const items = await Item.findByPk(req.params.items);
+    const items = await Item.findByPk(req.params.id);
     if(!items) {
         res.status(404);
         next();
